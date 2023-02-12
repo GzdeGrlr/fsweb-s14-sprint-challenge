@@ -3,7 +3,7 @@ const db = require("../../data/dbConfig");
 
 exports.getAll = async () => {
   const records = await db("tasks as t")
-    .leftJoin("projects as pr", "t.task_id", "pr.project_id")
+    .leftJoin("projects as pr", "t.project_id", "pr.project_id")
     .select(
       "t.task_id",
       "t.task_description",
