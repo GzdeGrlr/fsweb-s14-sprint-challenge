@@ -29,7 +29,6 @@ exports.create = async (payload) => {
   const result = {
     ...newTask,
     task_completed: newTask.task_completed ? true : false,
-    project_id: newTask.project_id,
   };
   return result;
 };

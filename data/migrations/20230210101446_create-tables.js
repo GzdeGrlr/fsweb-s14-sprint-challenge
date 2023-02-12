@@ -20,7 +20,7 @@
     task_notes
     task_completed
     project_id (fk)
-    
+
     project_resources tablosu
     project_resources_id(pk)
     project_id(fk)
